@@ -1,5 +1,5 @@
 <div class="footer">
-		<span>&copy; 2012 <a href="#">AgroPlus</a></span>
+		<span>&copy; <?php echo date("Y"); ?><a href="#"> AgroPlus</a></span>
 		<ul>
 			<li><a class="youtube-link" href="#"></a></li>
 			<li><a class="facebook-link" href="#"></a></li>

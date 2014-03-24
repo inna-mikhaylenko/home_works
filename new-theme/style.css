@@ -31,13 +31,13 @@ table                          { border-collapse:collapse; border-spacing:0; }
 a:link, a:visited              { font-size:14px; font-family:"Arial", sans-serif; color:#fff; text-decoration:none; }
 a:hover                        { text-decoration:underline; }
 /*-------------------------------------FONTS---------------------------------------*/
-/*@font-face {
+@font-face {
     font-family: 'passionbold';
-    src: url('passionone-regular-webfont.eot');
-    src: url('passionone-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('passionone-regular-webfont.woff') format('woff'),
-         url('passionone-regular-webfont.ttf') format('truetype'),
-         url('passionone-regular-webfont.svg#passionbold') format('svg');
+    src: url('../fonts/passionone-regular-webfont.eot');
+    src: url('../fonts/passionone-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/passionone-regular-webfont.woff') format('woff'),
+         url('../fonts/passionone-regular-webfont.ttf') format('truetype'),
+         url('../fonts/passionone-regular-webfont.svg#passionbold') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -57,7 +57,7 @@ a:hover                        { text-decoration:underline; }
 	height:511px;
 	overflow:hidden;
 }
-.header .navbar{
+.header div{
 	background:rgba(68, 65, 66, 0.7);
 	padding:26px 40px 25px 40px;
 }
@@ -92,18 +92,87 @@ a:hover                        { text-decoration:underline; }
 	width:640px;
 	margin:35px 40px 30px 40px;
 }
+.content h2{
+	margin:0 0 14px 0;
+}
 .content h2 a{
 	font-size:36px;
 	font-family:"Passion One";
 	font-weight:300;
 	color:#fff;
-	margin:0 0 14px 0;
 }
-.content p{
-	font-size:14px;
-	text-indent:15px;
+.content ul{
+	overflow:hidden;
+	padding:0 0 10px 0;
+	margin:0 0 10px 0;
+	border-bottom: 1px solid #323232;
+}
+.content ul li{
+	float:left;
+	width:150px;
+	margin:0 10px 0 0;
+}
+.content ul li h3{
+	margin:16px 0 6px 0;
+}
+.content ul li h3 a{
+	color:#B09609;
+	font-weight:bold;
+}
+.content ul li p{
 	line-height:1.5;
-	margin:16px 0;
+}
+.content .read-more-link{
+	display:block;
+	text-align:right;
+	font-size:12px;
+	padding:0 11px 0 0;
+	text-decoration:underline;
+	background:url(images/arrow-link.png) center right no-repeat;
+}
+.content a:hover{
+	text-decoration:none;
+}
+.content .banner{
+	background:#292929 url(images/banner-man.png) right no-repeat;
+	margin:23px 0 0 0;
+	padding:25px 135px 35px 40px;
+}
+.content .banner h4 a{
+	font-size:34px;
+	font-family:"Passion One";
+	font-weight:300;
+	color:#fff;
+}
+.content .banner strong{
+	display:block;
+	font-size:21px;
+	text-transform:uppercase;
+	font-weight:100;
+	color:#fff;
+	letter-spacing:-1px;
+	margin:-3px 0 18px 0;
+}
+.content .banner p{
+	background:url(images/quote-before.png) left top no-repeat, url(images/quote-after.png) right bottom no-repeat;
+	width:365px;
+	text-indent:26px;
+	font-style:italic;
+	line-height:1.6;
+}
+.content .banner p span{
+	color:#B09609;
+}
+.content .banner .author{
+	display:block;
+	color:#fff;
+	text-align:right;
+	margin:15px 98px 0 0;
+	font-size:14px;
+    font-weight:bold;
+}
+.content .banner .author i{
+	font-weight:normal;
 }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------SIDEBAR--------------------------------------*/
